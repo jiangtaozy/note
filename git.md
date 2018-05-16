@@ -12,3 +12,10 @@
       git rm -r --cached .
       git add .
       git commit -m "fixed untracked files"
+
+- Remove untracked files from the working tree
+
+      # show what will be deleted
+      git clean -n
+      # Clean Step - beware: this will delete files
+      git clean -f
