@@ -40,3 +40,11 @@
       open react-native-debugger
       start remote js debugging
       toggle inspector
+
+- Application x has not been registered
+
+      重启电脑
+
+- react-devtools: Waiting for React to connect…
+
+      adb reverse tcp:8097 tcp:8097

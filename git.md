@@ -19,3 +19,7 @@
       git clean -n
       # Clean Step - beware: this will delete files
       git clean -f
+
+- Undo a git add - remove files staged for a git commit
+
+      git reset filename.txt
