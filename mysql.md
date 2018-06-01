@@ -14,3 +14,7 @@
 
       GRANT ALL PRIVILEGES ON mydb.* TO 'jemo'@'localhost';
 
+- import an SQL file using the command line in MySQL.
+
+      mysql -u username -p database_name < file.sql
+
