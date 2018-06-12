@@ -6,6 +6,10 @@
 
       ,cc
 
-- Uncomments the selected line(s).
+- Uncomments the selected line(s)
 
       ,cu
+
+- Copy word without trailing white space
+
+      ye
