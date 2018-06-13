@@ -14,3 +14,5 @@
       . /usr/share/autojump/autojump.sh
       mkdir ~/.config/fish/functions
       cp /usr/share/autojump/autojump.fish ~/.config/fish/functions
+      autojump
+      j dir-name
