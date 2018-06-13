@@ -16,3 +16,7 @@
       cp /usr/share/autojump/autojump.fish ~/.config/fish/functions
       autojump
       j dir-name
+
+- List the TCP ports that are being listened on
+
+      netstat -plnt 
