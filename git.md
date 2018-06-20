@@ -19,6 +19,8 @@
       git clean -n
       # Clean Step - beware: this will delete files
       git clean -f
+      # Remove untracked directories in addition to untracked files
+      git clean -fd
 
 - Undo a git add - remove files staged for a git commit
 
