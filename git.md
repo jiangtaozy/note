@@ -25,3 +25,8 @@
 - Undo a git add - remove files staged for a git commit
 
       git reset filename.txt
+
+- Adding a remote
+
+      git remote add origin https://github.com/user/repo.git
+      git push --set-upstream origin master
