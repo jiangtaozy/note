@@ -18,3 +18,6 @@
 
       mysql -u username -p database_name < file.sql
 
+- SQL DELETE Statement
+
+      DELETE FROM table_name WHERE condition;
