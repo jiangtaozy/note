@@ -9,3 +9,10 @@
        
       console.log(Username) // Italo
       console.log(Userage) // 10
+
+- Default values in destructuring
+
+      var {a = 10, b = 5} = {a: 3};
+
+      console.log(a); // 3
+      console.log(b); // 5
