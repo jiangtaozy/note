@@ -16,3 +16,17 @@
 
       console.log(a); // 3
       console.log(b); // 5
+
+- Deep nested object destructuring
+
+      let obj = {
+        p: [
+          'Hello',
+          { y: 'World' }
+        ]
+      };
+      
+      let { p, p: [x, { y }] } = obj;
+      x // "Hello"
+      y // "World"
+      p // ["Hello", {y: "World"}]
