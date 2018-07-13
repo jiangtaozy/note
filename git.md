@@ -29,4 +29,5 @@
 - Adding a remote
 
       git remote add origin https://github.com/user/repo.git
+      git branch --set-upstream-to=origin/master master
       git push --set-upstream origin master
