@@ -20,3 +20,8 @@
 - List the TCP ports that are being listened on
 
       netstat -plnt 
+
+- Find and replace text within a file or directory using sed command
+
+      sed -i 's/old-text/new-text/g' input.txt
+      find ./ -type f -exec sed -i 's/old-text/new-text/g' {} \; // not in fish shell
