@@ -21,3 +21,7 @@
 - SQL DELETE Statement
 
       DELETE FROM table_name WHERE condition;
+
+- Delete all records from a table
+
+      truncate table table_name
