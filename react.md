@@ -5,7 +5,6 @@
 
 - create-react-app Environment Variables
 
-
       npm start: process.env.NODE_ENV == 'development'
       npm build: process.env.NODE_ENV == 'production',
       npm test: process.env.NODE_ENV == 'test',
@@ -15,3 +14,11 @@
       // it is always equal to 'development', when you run npm test it is always
       // equal to 'test', and when you run npm run build to make a production
       // bundle, it is always equal to 'production'.
+
+- Uncaught TypeError: Cannot read property '__reactInternalInstance$foyrksc2xe4' of null
+
+      If you have an error like this, you likely have an earlier error which got React into an inconsistent state.
+
+- Uncaught (in promise) Invariant Violation: You must specify the "to" property
+
+      <Link to='' ></Link> // to='' will result in error
