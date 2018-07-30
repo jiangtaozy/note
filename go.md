@@ -5,6 +5,34 @@
       $git clone https://github.com/golang/net.git net 
       $go install net 
 
+- go get proxy
+
+       curl -L git.io/cow | bash
+
+       // edit $HOME/.cow/rc
+       listen = http://127.0.0.1:7777
+       proxy = socks5://127.0.0.1:1080
+
+       // edit ~/.proxy or ~/.bashrc
+       export http_proxy=http://127.0.0.1:7777
+       export https_proxy=http://127.0.0.1:7777
+       source ~/.profile
+       echo $http_proxy
+
+       // edit .config/fish/config.fish
+       set -x http_proxy http://127.0.0.1:7777
+       set -x https_proxy http://127.0.0.1:7777
+
+       cow &
+
+       // edit $USER/.gitconfig
+       [https]
+         proxy = http://localhost:7777
+       [http]
+         proxy = http://localhost:7777
+
+
+
 - go comments
 
       /* block comments */
