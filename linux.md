@@ -25,3 +25,36 @@
 
       sed -i 's/old-text/new-text/g' input.txt
       find ./ -type f -exec sed -i 's/old-text/new-text/g' {} \; // not work in fish shell
+
+- open image or other file
+
+      open filename
+
+- android sdk
+
+      tar -xvf android-sdk_r24.2-linux.tgz
+      cd android-sdk-linux/tools
+
+- install all sdk packages
+
+      ./android update sdk --no-ui
+      export ANDROID_HOME=$HOME/src/android-sdk-linux
+      export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+- Applications not resizing with WM, menus immediately closing
+
+      export _JAVA_AWT_WM_NONREPARENTING=1
+
+- webstorm  auto format code
+
+      Ctrl + Alt + L
+
+- configure a service to run at startup
+
+      1. Open /etc/rc.local file with this command:
+          vim /etc/rc.local
+      2. Add your script that you want to run on boot process there, for example:
+          // start proxy service
+          /home/jemo/src/proxy/shadowsocks/shadowsocks-local-linux64-1.1.5
+      3. Review the comments included in that file and make sure an exit 0 is at the end.
+      4. Save the files. And your script will run on boot process.

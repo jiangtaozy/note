@@ -13,3 +13,7 @@
 - Copy word without trailing white space
 
       ye
+
+- format code
+
+      select and tap '='

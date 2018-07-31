@@ -31,3 +31,12 @@
       git remote add origin https://github.com/user/repo.git
       git branch --set-upstream-to=origin/master master
       git push --set-upstream origin master
+
+- git diff on file in staging area
+
+      git diff --staged
+
+- Go to particular revision
+
+      // This will detach your HEAD, that is, leave you with no branch checked out
+      git checkout 0d1d7fc32

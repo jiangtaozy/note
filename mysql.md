@@ -25,3 +25,11 @@
 - Delete all records from a table
 
       truncate table table_name
+
+- Clone an SQL Record
+
+      CREATE TEMPORARY TABLE chan2 ENGINE=MEMORY SELECT * FROM channel WHERE chanid=21051;
+      UPDATE chan2 SET chanid=21109; // Change the unique key
+      // Update anything else that needs to be updated.
+      INSERT INTO channel SELECT * FROM chan2;
+      DROP TABLE chan2;
