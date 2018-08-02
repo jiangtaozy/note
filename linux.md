@@ -58,3 +58,12 @@
           /home/jemo/src/proxy/shadowsocks/shadowsocks-local-linux64-1.1.5
       3. Review the comments included in that file and make sure an exit 0 is at the end.
       4. Save the files. And your script will run on boot process.
+
+- Run bash script / run a service after login
+
+      edit ~/.profile
+      /home/jemo/cow &
+
+- Log in failure
+
+      ctrl-alt-F1
