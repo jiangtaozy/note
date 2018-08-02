@@ -40,3 +40,8 @@
 
       // This will detach your HEAD, that is, leave you with no branch checked out
       git checkout 0d1d7fc32
+
+- Get back to most recent version
+
+      git branch
+      git checkout master
