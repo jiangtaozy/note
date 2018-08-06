@@ -103,3 +103,32 @@
         }
         fmt.Printf("data: %s\n", data) // data: {"name":"Sean","age":50}
       }
+
+- slice
+
+      // cap tells you the capacity of the underlying array. len tells you how many items are in the array.
+      // The slice abstraction in Go is very nice since it will resize the underlying array for you,
+      // plus in Go arrays cannot be resized so slices are almost always used instead.
+      s := make([]int, 0, 3)
+      for i := 0; i < 5; i++ {
+        s = append(s, i)
+        fmt.Printf("s: %v, cap: %v, len: %v, p: %p\n", s, cap(s), len(s), s)
+      }
+      // Slices support a “slice” operator with the syntax slice[low:high].
+      // For example, this gets a slice of the elements s[2], s[3], and s[4], excluding s[5]
+      l := s[2:5]
+      fmt.Printf("cap %v, len %v, %p\n", cap(l), len(l), l)
+      // s: [0], cap: 3, len: 1, p: 0xc420014480
+      // s: [0 1], cap: 3, len: 2, p: 0xc420014480
+      // s: [0 1 2], cap: 3, len: 3, p: 0xc420014480
+      // s: [0 1 2 3], cap: 6, len: 4, p: 0xc4200182a0
+      // s: [0 1 2 3 4], cap: 6, len: 5, p: 0xc4200182a0
+      // l: [2 3 4], cap: 4, len: 3, p: 0xc4200182b0
+
+- How to Write Go Code
+
+      - Go programmers typically keep all their Go code in a single workspace.
+      - A workspace contains many version control repositories.
+      - Each repository contains one or more packages.
+      - Each package consists of one or more Go source files in a single directory.
+      - The path to a package's directory determines its import path.
