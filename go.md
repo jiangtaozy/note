@@ -31,6 +31,10 @@
        [http]
          proxy = http://localhost:7777
 
+      // autorun cow after login
+      edit ~/.profile
+      /home/jemo/cow &
+
 
 
 - go comments
