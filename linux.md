@@ -67,3 +67,7 @@
 - Log in failure
 
       ctrl-alt-F1
+
+- ubuntu uninstall golang-go and its dependencies
+
+      sudo apt-get remove --auto-remove golang-go
