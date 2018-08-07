@@ -136,3 +136,24 @@
       - Each repository contains one or more packages.
       - Each package consists of one or more Go source files in a single directory.
       - The path to a package's directory determines its import path.
+
+- pointer
+
+      package main
+      
+      import "fmt"
+      
+      func main() {
+        i, j := 42, 2701
+      
+        // The & operator generates a pointer to its operand.
+        p := &i         // point to i
+        // The * operator denotes the pointer's underlying value.
+        fmt.Println(*p) // read i through the pointer
+        *p = 21         // set i through the pointer
+        fmt.Println(i)  // see the new value of i
+      
+        p = &j         // point to j
+        *p = *p / 37   // divide j through the pointer
+        fmt.Println(j) // see the new value of j
+      }
