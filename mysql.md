@@ -33,3 +33,7 @@
       // Update anything else that needs to be updated.
       INSERT INTO channel SELECT * FROM chan2;
       DROP TABLE chan2;
+
+- Remove Null Records
+
+      DELETE FROM myTable WHERE myColumn IS NULL
