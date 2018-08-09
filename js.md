@@ -30,3 +30,14 @@
       x // "Hello"
       y // "World"
       p // ["Hello", {y: "World"}]
+
+- Move array
+
+      let arr = [ { a: 0 }, { a: 1 }, { a: 2 } ];
+      let index = 1;
+      let item = arr[index];
+      // remove an element from index, return an array containing the deleted elements
+      arr.splice(index, 1);
+      // adds one or more elements to the beginning of an array
+      // and returns the new length of the array.
+      arr.unshift(item);
