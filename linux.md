@@ -71,3 +71,13 @@
 - ubuntu uninstall golang-go and its dependencies
 
       sudo apt-get remove --auto-remove golang-go
+
+- Weinre
+
+      npm -g install weinre
+      weinre --boundHost 192.168.31.217 --httpPort 9090
+      // Then inside your target document add:
+      <script src="http://192.168.31.217:9090/target/target-script-min.js#anonymous"></script>
+      // use Chrome open http://192.168.31.217:9090
+
+
