@@ -157,3 +157,10 @@
         *p = *p / 37   // divide j through the pointer
         fmt.Println(j) // see the new value of j
       }
+
+- define multiple name tags in a struct
+
+      type Page struct {
+        PageId string                 `bson:"pageId" json:"pageId"`
+        Meta   map[string]interface{} `bson:"meta" json:"pageId"`
+      }
