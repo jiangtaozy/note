@@ -81,3 +81,6 @@
       // use Chrome open http://192.168.31.217:9090
 
 
+- Screenshot
+
+      gnome-screenshot --interactive
