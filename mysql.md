@@ -37,3 +37,8 @@
 - Remove Null Records
 
       DELETE FROM myTable WHERE myColumn IS NULL
+
+- Show procedure
+
+      show procedure status\G;
+      show create procedure proc_name\G;
