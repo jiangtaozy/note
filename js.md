@@ -41,3 +41,12 @@
       // adds one or more elements to the beginning of an array
       // and returns the new length of the array.
       arr.unshift(item);
+
+- Transform a moment object into a date object
+
+      moment().toDate();
+
+- Get a moment object
+
+      //This parses the given date using the given format. Returns a moment object.
+      m = moment("2013-03-01", "YYYY-MM-DD")
