@@ -50,3 +50,8 @@
 
       //This parses the given date using the given format. Returns a moment object.
       m = moment("2013-03-01", "YYYY-MM-DD")
+
+- Check if object is array
+
+      Array.isArray(obj)
+
