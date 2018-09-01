@@ -83,4 +83,12 @@
 
 - Screenshot
 
-      gnome-screenshot --interactive
+  ```
+  gnome-screenshot --interactive
+  ```
+
+- Shortcut to close terminal
+
+  ```
+  <kbd>ctrl</kbd>+<kbd>D</kbd>
+  ```
