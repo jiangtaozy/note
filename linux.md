@@ -80,6 +80,18 @@
       <script src="http://192.168.31.217:9090/target/target-script-min.js#anonymous"></script>
       // use Chrome open http://192.168.31.217:9090
 
+- Fiddle
+
+  ```
+  Install Mono
+  mono Fiddler.exe
+  [Tools] –> [Fiddler Options] -> [Connections] ，端口 8888， 勾选 Allow remote computers to connect，重启 Fiddler
+  手机设置代理 修改网络->显示高级选项->代理->手动，主机 电脑局域网 IP，端口 8888
+  fiddler 命令行中输入: bpafter http://hashuo.chslab.com
+  手机访问 http://hashuo.chslab.com, 插入 <script src="http://192.168.31.217:9090/target/target-script-min.js#anonymous"></script>
+  
+  ```
+
 
 - Screenshot
 
