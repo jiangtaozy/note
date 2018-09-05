@@ -42,3 +42,7 @@
 
       show procedure status\G;
       show create procedure proc_name\G;
+
+- Count
+
+    select count(*) from myTable;
