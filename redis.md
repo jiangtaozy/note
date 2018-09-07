@@ -17,3 +17,7 @@
 - all fields and values of the hash
 
       HGETALL myhash
+
+- How to atomically delete keys matching a pattern
+
+    EVAL "return redis.call('del', unpack(redis.call('keys', ARGV[1])))" 0 prefix:*
