@@ -55,3 +55,8 @@
         </React.Fragment>
       );
       export default Header;
+
+- Image object-fit
+
+    contain | cover | fill | none | scale-down
+
