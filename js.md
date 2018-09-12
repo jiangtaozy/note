@@ -63,3 +63,13 @@
       console.log(urlParams.getAll('action')); // ["edit"]
       console.log(urlParams.toString()); // "?post=1234&action=edit"
       console.log(urlParams.append('active', '1')); // "?post=1234&action=edit&active=1"
+
+- Optional destructuring
+
+    const where = {
+      del: false,
+      ...(phone && {phone}),
+      ...(version && {version}),
+      ...(company && {company: { [Op.like]: `%${company}%` }}),
+      ...(name && {name: { [Op.like]: `%${name}%` }}),
+    };
