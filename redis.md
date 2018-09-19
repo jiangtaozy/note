@@ -21,3 +21,7 @@
 - How to atomically delete keys matching a pattern
 
     EVAL "return redis.call('del', unpack(redis.call('keys', ARGV[1])))" 0 prefix:*
+
+- Docker run redis
+
+    docker run -it --link some-redis:redis --rm redis redis-cli -h redis -p 6379
