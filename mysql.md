@@ -51,7 +51,4 @@
 
     REPLACE(str, find_string, replace_with)
 
-    SELECT pub_city,country,
-    REPLACE(country,'K','SA') 
-    FROM publisher 
-    WHERE country='UK';
+    UPDATE test set test_char = replace(test_char, 'Scott', 'Sidhu');
