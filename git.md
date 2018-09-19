@@ -49,3 +49,7 @@
 - Changing a remote's URL
 
     git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+
+- Set git text editor
+
+    git config --global core.editor "vim"
