@@ -45,3 +45,7 @@
 
       git branch
       git checkout master
+
+- Changing a remote's URL
+
+    git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
