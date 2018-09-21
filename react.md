@@ -22,3 +22,12 @@
 - Uncaught (in promise) Invariant Violation: You must specify the "to" property
 
       <Link to='' ></Link> // to='' will result in error
+
+- Custom Environment Variables
+
+    // package.json
+    "scripts": {
+      "start": "REACT_APP_SECRET_CODE=http://192.168.31.10 node scripts/start.js",
+    },
+    // App.js
+    console.log(process.env.REACT_APP_SECRET_CODE)
