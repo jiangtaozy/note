@@ -104,3 +104,9 @@
   ```
   <kbd>ctrl</kbd>+<kbd>D</kbd>
   ```
+
+- Copy ssh id_rsa.pub to remote server
+
+    ssh-copy-id user@hostname.example.com
+
+
