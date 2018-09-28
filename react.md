@@ -31,3 +31,16 @@
     },
     // App.js
     console.log(process.env.REACT_APP_SECRET_CODE)
+
+- React-router go to same path not reload bug
+    componentDidUpdate(prevProps, prevState, snapshot) {
+      const { match: { params: { id } } } = this.props;
+      const { match: { params: { id: prevId } } } = prevProps;
+      if(id !== prevId) {
+        this.setState({
+          addPage: !id,
+        });
+        const { form } = this.props;
+        form.resetFields();
+      }
+    }
