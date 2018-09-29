@@ -60,3 +60,6 @@
 
     contain | cover | fill | none | scale-down
 
+- One line text
+
+    white-space: nowrap;
