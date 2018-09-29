@@ -25,3 +25,7 @@
 - Docker run redis
 
     docker run -it --link some-redis:redis --rm redis redis-cli -h redis -p 6379
+
+- Docker run redis-cli
+
+    docker exec -it chs-wfx-redis redis-cli
