@@ -52,3 +52,9 @@
     REPLACE(str, find_string, replace_with)
 
     UPDATE test set test_char = replace(test_char, 'Scott', 'Sidhu');
+
+- Not equal to
+
+    delete from table where id not in ( 2 );
+    or
+    delete from table where id <> 2;
