@@ -109,4 +109,7 @@
 
     ssh-copy-id user@hostname.example.com
 
+- Extract a zip file to a specific folder
+
+    unzip /path/to/file.zip -d temp_for_zip_extract
 
