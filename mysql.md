@@ -58,3 +58,8 @@
     delete from table where id not in ( 2 );
     or
     delete from table where id <> 2;
+
+- Drop unique
+
+    SHOW CREATE TABLE table_name
+    ALTER TABLE `table_name` DROP INDEX key_name;
