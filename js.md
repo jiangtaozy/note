@@ -73,3 +73,7 @@
       ...(company && {company: { [Op.like]: `%${company}%` }}),
       ...(name && {name: { [Op.like]: `%${name}%` }}),
     };
+
+- Get front location
+
+    window.location.origin
