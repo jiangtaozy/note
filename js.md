@@ -77,3 +77,7 @@
 - Get front location
 
     window.location.origin
+
+- Moment get current date
+
+    const now = moment().format('YYYY-MM-DD HH:mm:ss');
