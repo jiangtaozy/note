@@ -63,3 +63,10 @@
 
     SHOW CREATE TABLE table_name
     ALTER TABLE `table_name` DROP INDEX key_name;
+
+- Change primary column
+
+    alter table user modify `primary_id` int, drop primary key, add primary key (id);
+    alter table user drop column primary_id;
+    alter table user add primary key (id);
+    alter table user modify column id int auto_increment;
