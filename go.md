@@ -164,3 +164,10 @@
         PageId string                 `bson:"pageId" json:"pageId"`
         Meta   map[string]interface{} `bson:"meta" json:"pageId"`
       }
+
+- install etcd
+
+    $ go get -v go.etcd.io/etcd
+    $ $GOPATH/bin/etcd
+    $ ./build
+    $ ETCDCTL_API=3 ./bin/etcdctl put foo bar
