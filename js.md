@@ -81,3 +81,9 @@
 - Moment get current date
 
     const now = moment().format('YYYY-MM-DD HH:mm:ss');
+
+- Destructuring default value null bug
+
+    let obj = { a: null }
+    let { a = {} } = obj
+    console.log('a: ', a) // a: null not a: {}
