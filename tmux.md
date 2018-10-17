@@ -1,0 +1,2 @@
+- tmux new -s session # 建立会话
+- tmux kill-session -t demo # 关闭demo会话
