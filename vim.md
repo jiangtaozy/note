@@ -14,6 +14,10 @@
 
       ye
 
-- format code
+- Format code
 
       select and tap '='
+
+- Join lines without producing a space?
+
+    gJ
