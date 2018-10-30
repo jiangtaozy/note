@@ -67,3 +67,7 @@
 - Black color
 
     rgba(0, 0, 0, 0.5)
+
+- Img border-radius
+
+    border-radius: 8px;
