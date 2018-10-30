@@ -87,3 +87,10 @@
     let obj = { a: null }
     let { a = {} } = obj
     console.log('a: ', a) // a: null not a: {}
+
+- Keep two decimals
+
+    10.989.toFixed(2) // '10.99'
+    Math.round(5/2) // 3
+    Math.ceil(7/2) // 4
+    Math.floor(7/2) // 3
