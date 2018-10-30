@@ -63,3 +63,7 @@
 - One line text
 
     white-space: nowrap;
+
+- Black color
+
+    rgba(0, 0, 0, 0.5)
