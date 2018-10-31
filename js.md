@@ -94,3 +94,8 @@
     Math.round(5/2) // 3
     Math.ceil(7/2) // 4
     Math.floor(7/2) // 3
+
+- Object keys
+
+    let obj = { a: 1, b: 2 }
+    Object.keys(obj) // [ 'a', 'b' ]
