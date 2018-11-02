@@ -29,3 +29,11 @@
 - Docker run redis-cli
 
     docker exec -it chs-wfx-redis redis-cli
+
+- Set expire time
+
+    client.set(key, value, 'EX', 60 * 60 * 24, callback);
+    // EX seconds -- Set the specified expire time, in seconds.
+    // PX milliseconds -- Set the specified expire time, in milliseconds.
+    // NX -- Only set the key if it does not already exist.
+    // XX -- Only set the key if it already exist.
