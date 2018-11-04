@@ -13,6 +13,12 @@
       left: 50%;
       transform: translate(-50%, -50%);
 
+      // or
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+
 - Center Horizontally
 
       display: block;
