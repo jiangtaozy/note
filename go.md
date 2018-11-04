@@ -171,3 +171,8 @@
     $ $GOPATH/bin/etcd
     $ ./build
     $ ETCDCTL_API=3 ./bin/etcdctl put foo bar
+
+- Bug: multiple registrations for /debug/requests
+
+    // added rm -rf $GOPATH/src/go.etcd.io/etcd/vendor/golang.org/x/net/trace to our CI pipeline 
+    rm -rf $GOPATH/src/go.etcd.io/etcd/vendor/golang.org/x/net/trace
