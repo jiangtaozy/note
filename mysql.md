@@ -70,3 +70,8 @@
     alter table user drop column primary_id;
     alter table user add primary key (id);
     alter table user modify column id int auto_increment;
+
+- Select where column is not empty
+
+    select from users where phone <> '';
+    select from users where phone IS NOT NULL;
