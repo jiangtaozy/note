@@ -21,3 +21,11 @@
 - Join lines without producing a space?
 
     gJ
+
+- Search current word
+
+    *
+
+- Clear last search highlighting
+
+    :noh
