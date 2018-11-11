@@ -176,3 +176,11 @@
 
     // added rm -rf $GOPATH/src/go.etcd.io/etcd/vendor/golang.org/x/net/trace to our CI pipeline 
     rm -rf $GOPATH/src/go.etcd.io/etcd/vendor/golang.org/x/net/trace
+
+- Compare string and byte slice
+
+   str == string(byteSlice)
+
+- Convert byte array to string
+
+    s := string(byteArray[:n])

@@ -92,7 +92,6 @@
   
   ```
 
-
 - Screenshot
 
   ```
@@ -107,9 +106,32 @@
 
 - Copy ssh id_rsa.pub to remote server
 
-    ssh-copy-id user@hostname.example.com
+  ```
+  ssh-copy-id user@hostname.example.com
+  ```
 
 - Extract a zip file to a specific folder
 
-    unzip /path/to/file.zip -d temp_for_zip_extract
+  ```
+  unzip /path/to/file.zip -d temp_for_zip_extract
+  ```
 
+- How to syntax highlight via Less
+
+  ```
+  # vi .bashrc
+  export LESSOPEN="| /usr/bin/src-hilite-lesspipe.sh %s"
+  export LESS=' -R '
+
+  As of Debian Stretch and Fedora 25, package names and script paths differ. 
+
+  # Debian
+  sudo apt install libsource-highlight-common source-highlight
+  dpkg -L libsource-highlight-common | grep lesspipe
+  # /usr/share/source-highlight/src-hilite-lesspipe.sh
+
+  # Fedora
+  sudo dnf install source-highlight
+  rpm -ql source-highlight | grep lesspipe
+  # /usr/bin/source-highlight/src-hilite-lesspipe.sh
+  ```
