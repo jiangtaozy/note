@@ -53,3 +53,12 @@
 - Set git text editor
 
     git config --global core.editor "vim"
+
+- Unstage a deleted file
+
+  ```
+  # this restores the file status in the index
+  git reset -- <file>
+  # then check out a copy from the index
+  git checkout -- <file>
+  ```
