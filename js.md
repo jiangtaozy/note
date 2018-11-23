@@ -99,3 +99,9 @@
 
     let obj = { a: 1, b: 2 }
     Object.keys(obj) // [ 'a', 'b' ]
+
+- 2 decimal float
+
+  ```
+  parseFloat(parseFloat(a).toFixed(2))
+  ```

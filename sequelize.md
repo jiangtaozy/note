@@ -33,3 +33,14 @@
       // Rollback transaction if any errors were encountered
       await transaction.rollback();
     }
+
+- Ordering
+
+  ```
+  Subtask.findAll({
+    order: [
+      ['title', 'DESC'],
+      ['name', 'ASC'],
+    ],
+  })
+  ```

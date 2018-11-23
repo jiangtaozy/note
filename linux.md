@@ -135,3 +135,14 @@
   rpm -ql source-highlight | grep lesspipe
   # /usr/bin/source-highlight/src-hilite-lesspipe.sh
   ```
+- Display available WiFi networks
+
+  ```
+  nmcli dev wifi:
+  ```
+
+- Connect to a wireless AP:
+
+  ```
+  nmcli dev wifi connect lz_chslab_netgear password 123456@lz
+  ```
