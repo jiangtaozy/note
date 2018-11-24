@@ -66,42 +66,49 @@
 
 - Optional destructuring
 
-    const where = {
-      del: false,
-      ...(phone && {phone}),
-      ...(version && {version}),
-      ...(company && {company: { [Op.like]: `%${company}%` }}),
-      ...(name && {name: { [Op.like]: `%${name}%` }}),
-    };
+      const where = {
+        del: false,
+        ...(phone && {phone}),
+        ...(version && {version}),
+        ...(company && {company: { [Op.like]: `%${company}%` }}),
+        ...(name && {name: { [Op.like]: `%${name}%` }}),
+      };
 
 - Get front location
 
-    window.location.origin
+      window.location.origin
 
 - Moment get current date
 
-    const now = moment().format('YYYY-MM-DD HH:mm:ss');
+      const now = moment().format('YYYY-MM-DD HH:mm:ss');
 
 - Destructuring default value null bug
 
-    let obj = { a: null }
-    let { a = {} } = obj
-    console.log('a: ', a) // a: null not a: {}
+      let obj = { a: null }
+      let { a = {} } = obj
+      console.log('a: ', a) // a: null not a: {}
 
 - Keep two decimals
 
-    10.989.toFixed(2) // '10.99'
-    Math.round(5/2) // 3
-    Math.ceil(7/2) // 4
-    Math.floor(7/2) // 3
+      10.989.toFixed(2) // '10.99'
+      Math.round(5/2) // 3
+      Math.ceil(7/2) // 4
+      Math.floor(7/2) // 3
 
 - Object keys
 
-    let obj = { a: 1, b: 2 }
-    Object.keys(obj) // [ 'a', 'b' ]
+      let obj = { a: 1, b: 2 }
+      Object.keys(obj) // [ 'a', 'b' ]
 
 - 2 decimal float
 
-  ```
-  parseFloat(parseFloat(a).toFixed(2))
-  ```
+      parseFloat(parseFloat(a).toFixed(2))
+
+- Phone number regex pattern
+
+      /^1[3-9](\d{9})$/
+
+- Password regex pattern
+
+      /^[a-zA-Z0-9!@#$%^&*]{6,16}$/
+      // 特殊字符<202c> 13836885581‬
