@@ -145,4 +145,23 @@
 
   ```
   nmcli dev wifi connect lz_chslab_netgear password 123456@lz
+
+- Find last system reboot time/date
+
+  ```
+  who -b
+  last reboot | less
+  last reboot | head -1
+  ```
+
+- Finding systems last shutdown date and time
+
+  ```
+  last -x | grep shutdown | head -1
+  ```
+
+- Find out Linux system up since…
+
+  ```
+  uptime -s
   ```

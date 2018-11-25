@@ -64,27 +64,42 @@
 
 - Image object-fit
 
-    contain | cover | fill | none | scale-down
+  contain | cover | fill | none | scale-down
 
 - One line text
 
-    white-space: nowrap;
+  ```
+  white-space: nowrap;
+  ```
 
 - Black color
 
-    rgba(0, 0, 0, 0.5)
+  ```
+  rgba(0, 0, 0, 0.5)
+  ```
 
 - Img border-radius
 
-    border-radius: 8px;
+  ```
+  border-radius: 8px;
+  ```
 
 - flex-grow 属性
 
-    // 如果我们希望，输入框占据当前行的所有剩余宽度，
-    // 只需要指定输入框的flex-grow属性为1。
-    // flex-grow属性默认等于0，即使用本来的宽度，不拉伸。
-    // 等于1时，就表示该项目宽度拉伸，占据当前行的所有剩余宽度。
+  ```
+  // 如果我们希望，输入框占据当前行的所有剩余宽度，
+  // 只需要指定输入框的flex-grow属性为1。
+  // flex-grow属性默认等于0，即使用本来的宽度，不拉伸。
+  // 等于1时，就表示该项目宽度拉伸，占据当前行的所有剩余宽度。
 
-    input  {
-      flex-grow: 1;
-    }
+  input  {
+    flex-grow: 1;
+  }
+  ```
+
+- Remove underlines and color from links
+
+  ```
+  text-decoration: none;
+  color: inherit;
+  ```
