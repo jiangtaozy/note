@@ -165,3 +165,7 @@
   ```
   uptime -s
   ```
+
+- ls sort the files according to the time stamp
+
+      ls -lt
