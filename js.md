@@ -102,7 +102,7 @@
 
 - 2 decimal float
 
-      parseFloat(parseFloat(a).toFixed(2))
+      Math.round(number * 100) / 100
 
 - Phone number regex pattern
 
