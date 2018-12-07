@@ -35,8 +35,6 @@
       edit ~/.profile
       /home/jemo/cow &
 
-
-
 - go comments
 
       /* block comments */
@@ -167,20 +165,24 @@
 
 - install etcd
 
-    $ go get -v go.etcd.io/etcd
-    $ $GOPATH/bin/etcd
-    $ ./build
-    $ ETCDCTL_API=3 ./bin/etcdctl put foo bar
+      $ go get -v go.etcd.io/etcd
+      $ $GOPATH/bin/etcd
+      $ ./build
+      $ ETCDCTL_API=3 ./bin/etcdctl put foo bar
 
 - Bug: multiple registrations for /debug/requests
 
-    // added rm -rf $GOPATH/src/go.etcd.io/etcd/vendor/golang.org/x/net/trace to our CI pipeline 
-    rm -rf $GOPATH/src/go.etcd.io/etcd/vendor/golang.org/x/net/trace
+      // added rm -rf $GOPATH/src/go.etcd.io/etcd/vendor/golang.org/x/net/trace to our CI pipeline 
+      rm -rf $GOPATH/src/go.etcd.io/etcd/vendor/golang.org/x/net/trace
 
 - Compare string and byte slice
 
-   str == string(byteSlice)
+      str == string(byteSlice)
 
 - Convert byte array to string
 
-    s := string(byteArray[:n])
+      s := string(byteArray[:n])
+
+- Print struct with field name
+
+      log.Printf("%+v", object)

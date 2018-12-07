@@ -48,17 +48,34 @@
 
 - Changing a remote's URL
 
-    git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+      git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
 
 - Set git text editor
 
-    git config --global core.editor "vim"
+      git config --global core.editor "vim"
 
 - Unstage a deleted file
 
-  ```
-  # this restores the file status in the index
-  git reset -- <file>
-  # then check out a copy from the index
-  git checkout -- <file>
-  ```
+      # this restores the file status in the index
+      git reset -- <file>
+      # then check out a copy from the index
+      git checkout -- <file>
+
+- Creating a new branch
+
+      git branch develop
+
+- Switching branches
+
+      git checkout develop
+
+- Listing branches
+
+      git branch
+      git branch -v
+      git branch --merged
+      git branch --no-merged
+
+- Showing branch history
+
+      git log --oneline --decorate --graph --all
