@@ -20,20 +20,20 @@
 
 - How to atomically delete keys matching a pattern
 
-    EVAL "return redis.call('del', unpack(redis.call('keys', ARGV[1])))" 0 prefix:*
+      EVAL "return redis.call('del', unpack(redis.call('keys', ARGV[1])))" 0 prefix:*
 
 - Docker run redis
 
-    docker run -it --link some-redis:redis --rm redis redis-cli -h redis -p 6379
+      docker run -it --link some-redis:redis --rm redis redis-cli -h redis -p 6379
 
 - Docker run redis-cli
 
-    docker exec -it chs-wfx-redis redis-cli
+      docker exec -it chs-wfx-redis redis-cli
 
 - Set expire time
 
-    client.set(key, value, 'EX', 60 * 60 * 24, callback);
-    // EX seconds -- Set the specified expire time, in seconds.
-    // PX milliseconds -- Set the specified expire time, in milliseconds.
-    // NX -- Only set the key if it does not already exist.
-    // XX -- Only set the key if it already exist.
+      client.set(key, value, 'EX', 60 * 60 * 24, callback);
+      // EX seconds -- Set the specified expire time, in seconds.
+      // PX milliseconds -- Set the specified expire time, in milliseconds.
+      // NX -- Only set the key if it does not already exist.
+      // XX -- Only set the key if it already exist.

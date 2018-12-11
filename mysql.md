@@ -16,7 +16,7 @@
 
 - import an SQL file using the command line in MySQL.
 
-      mysql -u username -p database_name < file.sql
+      mysql -h 192.168.31.3 -u username -p database_name < file.sql
 
 - SQL DELETE Statement
 

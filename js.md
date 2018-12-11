@@ -51,6 +51,10 @@
       //This parses the given date using the given format. Returns a moment object.
       m = moment("2013-03-01", "YYYY-MM-DD")
 
+- Moment format
+
+      const now = moment().format('YYYY-MM-DD HH:mm:ss');
+
 - Check if object is array
 
       Array.isArray(obj)
@@ -73,14 +77,13 @@
         ...(company && {company: { [Op.like]: `%${company}%` }}),
         ...(name && {name: { [Op.like]: `%${name}%` }}),
       };
+      const array = [
+        ...(isTrue ? ['data'] : []),
+      ];
 
 - Get front location
 
       window.location.origin
-
-- Moment get current date
-
-      const now = moment().format('YYYY-MM-DD HH:mm:ss');
 
 - Destructuring default value null bug
 
