@@ -20,12 +20,19 @@
 
 - Join lines without producing a space?
 
-    gJ
+      gJ
 
 - Search current word
 
-    *
+      *
 
 - Clear last search highlighting
 
-    :noh
+      :noh
+
+- Text template
+
+      " .vimrc
+      :imap <buffer> ;c console.log(": ", );
+      :imap <buffer> ;l loggger.info(": ", );
+      " type ;c in insert mode
