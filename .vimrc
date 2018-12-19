@@ -183,7 +183,8 @@ call plug#begin('~/.vim/plugged')
 
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 Plug 'junegunn/vim-easy-align'
-
+" NERD Commenter
+Plug 'scrooloose/nerdcommenter'
 " Any valid git URL is allowed
 "Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 
@@ -219,3 +220,12 @@ xmap ga <Plug>(EasyAlign)
 
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
+
+"------------------------------------------------------------
+" change the nerdcommenter <Leader> key
+let mapleader=","
+
+" text template
+" :imap <buffer> ;fo <C-O>mzfor( %%%; %%%; %%%)<CR>{ // %%%<CR>%%%<CR>}<CR><C-O>'z;;
+:imap <buffer> ;c console.log(": ", );<esc>
+:imap <buffer> ;l logger.info(": ", );<esc>

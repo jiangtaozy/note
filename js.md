@@ -97,6 +97,9 @@
       Math.round(5/2) // 3
       Math.ceil(7/2) // 4
       Math.floor(7/2) // 3
+      const keepTwoDecimals = (number) => {
+        return Math.round(parseFloat(number) * 100) / 100;
+      }
 
 - Object keys
 

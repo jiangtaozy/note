@@ -36,11 +36,23 @@
 
 - Ordering
 
-  ```
-  Subtask.findAll({
-    order: [
-      ['title', 'DESC'],
-      ['name', 'ASC'],
-    ],
-  })
-  ```
+      Subtask.findAll({
+        order: [
+          ['title', 'DESC'],
+          ['name', 'ASC'],
+        ],
+      })
+
+- Sequelize literal add
+
+      User.update({
+        balances: sequelize.literal('balances + ' + change),
+      },
+      {
+        where: {
+          id: userId,
+          del: false,
+        },
+        transaction,
+        lock: transaction.LOCK.UPDATE, // 加锁
+      });
