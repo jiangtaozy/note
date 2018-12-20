@@ -33,6 +33,6 @@
 - Text template
 
       " .vimrc
-      :imap <buffer> ;c console.log(": ", );
-      :imap <buffer> ;l loggger.info(": ", );
+      :imap <buffer> ;c console.log(": ", );<ESC>
+      :imap <buffer> ;l loggger.info(": ", );<ESC>
       " type ;c in insert mode
