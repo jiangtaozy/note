@@ -118,3 +118,9 @@
 
       /^[a-zA-Z0-9!@#$%^&*]{6,16}$/
       // 特殊字符<202c> 13836885581‬
+
+- Page beforeunload
+
+      window.addEventListener("beforeunload", function (event) {
+        goodLock(false); // 解决进入商品详情后关闭页面导致再进入时保存原来状态 bug 修改
+      });
