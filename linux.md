@@ -169,3 +169,7 @@
 - ls sort the files according to the time stamp
 
       ls -lt
+
+- Create tar Archive File
+
+      tar -cvf tecmint-14-09-12.tar /home/tecmint
