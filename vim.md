@@ -36,3 +36,9 @@
       :imap <buffer> ;c console.log(": ", );<ESC>
       :imap <buffer> ;l loggger.info(": ", );<ESC>
       " type ;c in insert mode
+
+- Fedora vim access clipboard
+
+      sudo dnf install vim-X11
+      // .config/fish/config.fish
+      alias vi=vimx

@@ -82,89 +82,68 @@
 
 - Fiddle
 
-  ```
-  Install Mono
-  mono Fiddler.exe
-  [Tools] –> [Fiddler Options] -> [Connections] ，端口 8888， 勾选 Allow remote computers to connect，重启 Fiddler
-  手机设置代理 修改网络->显示高级选项->代理->手动，主机 电脑局域网 IP，端口 8888
-  fiddler 命令行中输入: bpafter http://hashuo.chslab.com
-  手机访问 http://hashuo.chslab.com, 插入 <script src="http://192.168.31.217:9090/target/target-script-min.js#anonymous"></script>
-  
-  ```
+      Install Mono
+      mono Fiddler.exe
+      [Tools] –> [Fiddler Options] -> [Connections] ，端口 8888， 勾选 Allow remote computers to connect，重启 Fiddler
+      手机设置代理 修改网络->显示高级选项->代理->手动，主机 电脑局域网 IP，端口 8888
+      fiddler 命令行中输入: bpafter http://hashuo.chslab.com
+      手机访问 http://hashuo.chslab.com, 插入 <script src="http://192.168.31.217:9090/target/target-script-min.js#anonymous"></script>
 
 - Screenshot
 
-  ```
-  gnome-screenshot --interactive
-  ```
+      gnome-screenshot --interactive
 
 - Shortcut to close terminal
 
-  ```
-  <kbd>ctrl</kbd>+<kbd>D</kbd>
-  ```
+      <kbd>ctrl</kbd>+<kbd>D</kbd>
 
 - Copy ssh id_rsa.pub to remote server
 
-  ```
-  ssh-copy-id user@hostname.example.com
-  ```
+      ssh-copy-id user@hostname.example.com
 
 - Extract a zip file to a specific folder
 
-  ```
-  unzip /path/to/file.zip -d temp_for_zip_extract
-  ```
+      unzip /path/to/file.zip -d temp_for_zip_extract
 
 - How to syntax highlight via Less
 
-  ```
-  # vi .bashrc
-  export LESSOPEN="| /usr/bin/src-hilite-lesspipe.sh %s"
-  export LESS=' -R '
+    # vi .bashrc
+    export LESSOPEN="| /usr/bin/src-hilite-lesspipe.sh %s"
+    export LESS=' -R '
+ 
+    As of Debian Stretch and Fedora 25, package names and script paths differ. 
+ 
+    # Debian
+    sudo apt install libsource-highlight-common source-highlight
+    dpkg -L libsource-highlight-common | grep lesspipe
+    # /usr/share/source-highlight/src-hilite-lesspipe.sh
+ 
+    # Fedora
+    sudo dnf install source-highlight
+    rpm -ql source-highlight | grep lesspipe
+    # /usr/bin/source-highlight/src-hilite-lesspipe.sh
 
-  As of Debian Stretch and Fedora 25, package names and script paths differ. 
-
-  # Debian
-  sudo apt install libsource-highlight-common source-highlight
-  dpkg -L libsource-highlight-common | grep lesspipe
-  # /usr/share/source-highlight/src-hilite-lesspipe.sh
-
-  # Fedora
-  sudo dnf install source-highlight
-  rpm -ql source-highlight | grep lesspipe
-  # /usr/bin/source-highlight/src-hilite-lesspipe.sh
-  ```
 - Display available WiFi networks
 
-  ```
-  nmcli dev wifi:
-  ```
+      nmcli dev wifi:
 
 - Connect to a wireless AP:
 
-  ```
-  nmcli dev wifi connect lz_chslab_netgear password 123456@lz
+      nmcli dev wifi connect lz_chslab_netgear password 123456@lz
 
 - Find last system reboot time/date
 
-  ```
-  who -b
-  last reboot | less
-  last reboot | head -1
-  ```
+      who -b
+      last reboot | less
+      last reboot | head -1
 
 - Finding systems last shutdown date and time
 
-  ```
-  last -x | grep shutdown | head -1
-  ```
+      last -x | grep shutdown | head -1
 
 - Find out Linux system up since…
 
-  ```
-  uptime -s
-  ```
+      uptime -s
 
 - ls sort the files according to the time stamp
 
@@ -173,3 +152,31 @@
 - Create tar Archive File
 
       tar -cvf tecmint-14-09-12.tar /home/tecmint
+
+- Systemd Fedora startup script permission denied
+
+      in /etc/selinux/config
+      set the line
+      SELINUX = enforcing
+      to
+      SELINUX = permissive
+
+- Systemd service
+
+      /usr/lib/systemd/system/shadowsocks.service
+
+      [Unit]
+      Description=shadowsocks
+
+      [Service]
+      Type=forking
+      ExecStart=/home/jemo/src/shadowsocks/shadowsocks-local-linux64-1.1.5
+
+      [Install]
+      WantedBy=multi-user.target
+
+      systemctl enable shadowsocks.service
+
+- Fedora enable pinyin
+
+      ibus engine libpinyin
