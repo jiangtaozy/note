@@ -79,3 +79,11 @@
 - Showing branch history
 
       git log --oneline --decorate --graph --all
+
+- Push a branch to your remote repository
+
+      git push origin develop
+
+- Clone a remote branch and switch to it
+
+      git checkout -b develop origin/develop

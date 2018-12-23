@@ -186,3 +186,8 @@
 - Print struct with field name
 
       log.Printf("%+v", object)
+
+- Initialize a new module
+
+      go mod init github.com/you/hello
+      go build
