@@ -153,6 +153,12 @@
 
       tar -cvf tecmint-14-09-12.tar /home/tecmint
 
+- Extract a .tar file
+
+      tar -xvf file.tar
+      tar -xzvf file.tar.gz
+      tar -xjvf file.tar.bz2
+
 - Systemd Fedora startup script permission denied
 
       in /etc/selinux/config

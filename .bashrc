@@ -138,17 +138,15 @@ alias logcat='adb shell "logcat | grep 'chrom'"'
 # autojump
 . /usr/share/autojump/autojump.sh
 
-# go
-export GOROOT=$HOME/src/go
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-
-# Vi mode in Bash
-set -o vi
+# go PATH
+export PATH=$PATH:/usr/local/go/bin
 
 # go proxy
 #export http_proxy=http://127.0.0.1:7777
 #export https_proxy=http://127.0.0.1:7777
+
+# Vi mode in Bash
+set -o vi
 
 export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
 export LESS=' -R '

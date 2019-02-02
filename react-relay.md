@@ -7,11 +7,14 @@
     create-react-app instagram
     cd instagram
     yarn add react-relay
-    yarn add relay-compiler babel-plugin-relay --dev
+    yarn add relay-compiler babel-plugin-relay graphql --dev
     yarn eject
 
     Edit package.json
 
+    "scripts": {
+      "relay": "relay-compiler --src ./src --schema ./schema.graphql"
+    },
     "babel": {
       "presets": [
         "react-app"

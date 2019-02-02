@@ -38,7 +38,7 @@
 - Small
 
   - The first rule of functions is that they should be small.
-  - The second ruld of functions is that they should be smaller than that.
+  - The second rule of functions is that they should be smaller than that.
 
 - Do Only One Thing
 
