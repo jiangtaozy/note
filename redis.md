@@ -37,3 +37,11 @@
       // PX milliseconds -- Set the specified expire time, in milliseconds.
       // NX -- Only set the key if it does not already exist.
       // XX -- Only set the key if it already exist.
+
+- Allowing remote connection to redis
+
+      sudo vim /etc/redis/redis.conf
+      Comment out the following line
+      bind 127.0.0.1
+      Restart redis.
+      sudo /etc/init.d/redis-server restart

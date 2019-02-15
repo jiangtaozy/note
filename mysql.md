@@ -75,3 +75,15 @@
 
     select from users where phone <> '';
     select from users where phone IS NOT NULL;
+
+- Enable Remote Access
+
+      vim /etc/mysql/my.cnf
+      Comment out following lines.
+      #bind-address           = 127.0.0.1
+      #skip-networking
+
+- Copy database
+
+      mysqldump -u chslab -p haotu > haotu.sql
+      mysql -u chslab -p haotu < haotu.sql
