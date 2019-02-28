@@ -5,6 +5,7 @@
 - 添加用户命令
 
       CREATE USER 'jemo'@'localhost' IDENTIFIED BY '123456';
+      CREATE USER 'jemo'@'%' IDENTIFIED BY '123456';
 
 - 创建数据库
 
@@ -13,6 +14,7 @@
 - 用户授权命令
 
       GRANT ALL PRIVILEGES ON mydb.* TO 'jemo'@'localhost';
+      GRANT ALL PRIVILEGES ON mydb.* TO 'jemo'@'%';
 
 - import an SQL file using the command line in MySQL.
 

@@ -105,6 +105,10 @@
 
       unzip /path/to/file.zip -d temp_for_zip_extract
 
+- Zip directory
+
+      zip –r filename.zip directory_name
+
 - How to syntax highlight via Less
 
     # vi .bashrc
@@ -186,3 +190,12 @@
 - Fedora enable pinyin
 
       ibus engine libpinyin
+
+- Extract a rar file
+
+      unrar x tecmint.rar
+
+- Run mov video file
+
+      sudo apt-get install libopus0
+      sudo apt-get install gstreamer1.0-libav
