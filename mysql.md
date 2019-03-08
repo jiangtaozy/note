@@ -90,6 +90,8 @@
       mysqldump -u chslab -p haotu > haotu.sql
       mysql -u chslab -p haotu < haotu.sql
 
+      mysqldump -u chslab -p haotu user > haotu.user.sql
+
 - Insert
 
       INSERT INTO table_name (column1, column2, column3, ...)
