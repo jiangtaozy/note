@@ -7,3 +7,4 @@
 
       service nginx stop
       systemctl stop nginx
+      /usr/local/openresty/nginx/sbin/nginx -s stop
