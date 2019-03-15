@@ -185,7 +185,8 @@
       [Install]
       WantedBy=multi-user.target
 
-      systemctl enable shadowsocks.service
+      sudo systemctl enable shadowsocks.service
+      sudo systemctl disable shadowsocks.service
 
 - Fedora enable pinyin
 
@@ -199,3 +200,17 @@
 
       sudo apt-get install libopus0
       sudo apt-get install gstreamer1.0-libav
+
+- Install RPM File
+
+      rpm -ivh awstats.i386.rpm
+
+- Check the battery's status via the terminal
+
+      upower -e
+      upower -i /org/freedesktop/UPower/devices/DisplayDevice
+
+- To set the master volume
+
+      amixer scontrols
+      amixer sset 'Master' 50%

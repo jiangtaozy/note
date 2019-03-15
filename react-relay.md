@@ -3,7 +3,7 @@
 
     Refer https://www.prisma.io/blog/getting-started-with-relay-modern-46f8de6bd6ec/
 
-    npm install -g create-react-app
+    sudo npm install -g create-react-app
     create-react-app instagram
     cd instagram
     yarn add react-relay
@@ -22,4 +22,8 @@
       "plugins": [
         "relay"
       ]
+    },
+
+    "scripts": {
+      "relay": "relay-compiler --src ./src --schema ./schema.graphql"
     },

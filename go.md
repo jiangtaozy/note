@@ -191,3 +191,23 @@
 
       go mod init github.com/you/hello
       go build
+
+- type assertion
+
+      str, ok := data.(string)
+      if str, ok := data.(string); ok {
+          /* act on str */
+      } else {
+          /* not string */
+      }
+
+- String to map
+
+      str := `{
+        "Name":"Wednesday",
+        "Age":6,
+        "Parents":["Gomez","Morticia"]
+      }`
+      var variables map[string]interface {}
+      err := json.Unmarshal([]byte(str), &variables)
+
