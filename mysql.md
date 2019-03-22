@@ -9,7 +9,7 @@
 
 - 创建数据库
 
-      CREATE DATABASE mydb CHARACTER SET utf8;
+      CREATE DATABASE mydb CHARACTER SET utf8mb4;
 
 - 用户授权命令
 
