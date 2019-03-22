@@ -214,3 +214,12 @@
 
       amixer scontrols
       amixer sset 'Master' 50%
+
+- Check disk space usage
+
+      df -hl
+
+- Get total disk usage size of an directory
+
+      du -sh dir
+      du -sh *
