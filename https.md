@@ -11,3 +11,7 @@
       version of this certificate in the future, simply run certbot-auto
       again. To non-interactively renew *all* of your certificates, run
       "certbot-auto renew"
+
+- Create a self-signed certificate with openssl
+
+      openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -nodes
