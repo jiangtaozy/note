@@ -223,3 +223,7 @@
 
       du -sh dir
       du -sh *
+
+- Remove all node_modules
+
+      find ./ -depth -name "node_modules" -type d -exec rm -rf "{}" \;
