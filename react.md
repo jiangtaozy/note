@@ -44,3 +44,7 @@
         form.resetFields();
       }
     }
+
+- Create react app using https in development
+
+      HTTPS=true npm start // not in fish
