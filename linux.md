@@ -227,3 +227,7 @@
 - Remove all node_modules
 
       find ./ -depth -name "node_modules" -type d -exec rm -rf "{}" \;
+
+- View chm file
+
+      kchmviewer
