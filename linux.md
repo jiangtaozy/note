@@ -2,6 +2,10 @@
 
       curl -O https://www.w3schools.com/html/mov_bbb.mp4
 
+- Curl output json format
+
+      curl "http://127.0.0.1:4000/assets/site-mgt/site?page=2&pageSize=2" | json_pp
+
 - define an alias in fish shell
 
       vi ~/.config/fish/config.fish
