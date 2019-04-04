@@ -14,3 +14,7 @@
 
       SET SQLFORMAT JSON
       SELECT * FROM emp;
+
+- Cannot locate a 64-bit Oracle Client library: libnsl.so.1
+
+      sudo dnf install libnsl

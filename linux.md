@@ -194,6 +194,7 @@
 
 - Fedora enable pinyin
 
+      ibus-daemon &
       ibus engine libpinyin
 
 - Extract a rar file
@@ -235,3 +236,7 @@
 - View chm file
 
       kchmviewer
+
+- Make symbolic links
+
+      ln -s target link-name

@@ -42,3 +42,9 @@
       sudo dnf install vim-X11
       // .config/fish/config.fish
       alias vi=vimx
+
+- Syntax highlight for vue.js
+
+      .vimrc
+      Plug 'posva/vim-vue'
+      :PlugInstall
