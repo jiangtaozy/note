@@ -48,3 +48,7 @@
       .vimrc
       Plug 'posva/vim-vue'
       :PlugInstall
+
+- Replace from line 5 to line 12
+
+      :5,12s/foo/bar/g
