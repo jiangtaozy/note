@@ -240,3 +240,7 @@
 - Make symbolic links
 
       ln -s target link-name
+
+- Open libreoffice
+
+      libreoffice
