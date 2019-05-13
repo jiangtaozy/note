@@ -244,3 +244,7 @@
 - Open libreoffice
 
       libreoffice
+
+- Recursive mkdir
+
+      mkdir -p foo/bar/zoo/andsoforth
