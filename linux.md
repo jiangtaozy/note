@@ -166,6 +166,11 @@
       tar -xvf file.tar
       tar -xzvf file.tar.gz
       tar -xjvf file.tar.bz2
+      tar -xvf file.tar.xz
+
+- Extract a .gz file
+
+      gunzip file.gz
 
 - Systemd Fedora startup script permission denied
 

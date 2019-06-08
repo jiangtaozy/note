@@ -13,3 +13,11 @@
 
       call plug#end()
       // Then invoke :PlugInstall to install the plugin.
+
+- Print
+
+      print();
+
+- Install package
+
+      flutter packages get

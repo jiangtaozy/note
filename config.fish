@@ -10,6 +10,7 @@ alias to122='ssh wk@122.152.195.166'
 
 alias logcat-chrom='adb shell "logcat | grep 'chrom'"'
 alias logcat-rn='adb logcat | grep ReactNativeJS'
+alias logcat-web='adb shell "logcat | grep 'Web Console'"'
 
 # go proxy
 #set -x http_proxy http://127.0.0.1:7777
