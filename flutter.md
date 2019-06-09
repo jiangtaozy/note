@@ -21,3 +21,7 @@
 - Install package
 
       flutter packages get
+
+- List emulators
+
+      flutter emulators
