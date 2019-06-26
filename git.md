@@ -32,6 +32,9 @@
       git branch --set-upstream-to=origin/master master
       git push --set-upstream origin master
 
+      // update remote
+      git remote set-url origin git@github.com:ppreyer/first_app.git
+
 - git diff on file in staging area
 
       git diff --staged
