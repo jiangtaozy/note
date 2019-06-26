@@ -18,3 +18,7 @@
 - Cannot locate a 64-bit Oracle Client library: libnsl.so.1
 
       sudo dnf install libnsl
+
+- Execute the .sql file as a script in the SQL Developer
+
+      @C:\Users\13213\Downloads\ASSETPHOTO_ATTACHMENT.sql;
