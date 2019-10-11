@@ -14,3 +14,8 @@
           password: '123456',
         },
       ])
+
+- Start rethinkdb
+
+      rethinkdb --bind all
+      rethinkdb
