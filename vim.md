@@ -52,3 +52,7 @@
 - Replace from line 5 to line 12
 
       :5,12s/foo/bar/g
+
+- Count
+
+      :%s/pattern//ng

@@ -1,6 +1,7 @@
 - Download file with curl
 
       curl -O https://www.w3schools.com/html/mov_bbb.mp4
+      curl -o newfile.tar.gz http://yourdomain.com/yourfile.tar.gz
 
 - Curl output json format
 
@@ -253,3 +254,27 @@
 - Recursive mkdir
 
       mkdir -p foo/bar/zoo/andsoforth
+
+- Information about the Linux distribution and version
+
+      cat /etc/*release*
+
+- Get the Linux Kernel Version
+
+      uname -v
+
+- Check battery status
+
+      cat /sys/class/power_supply/BAT0/capacity
+
+- Check RAM
+
+      free
+
+- Check file number
+
+      ls | wc -w
+
+- Merging folders with mv
+
+      rsync -av /source /destination

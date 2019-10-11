@@ -96,3 +96,14 @@
 
       INSERT INTO table_name (column1, column2, column3, ...)
       VALUES (value1, value2, value3, ...);
+
+- Insert now
+
+      INSERT INTO servers (column1) VALUES(NOW());
+
+- Order
+
+      SELECT expressions
+      FROM tables
+      [WHERE conditions]
+      ORDER BY expression [ ASC | DESC ];
