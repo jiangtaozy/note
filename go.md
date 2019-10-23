@@ -211,3 +211,6 @@
       var variables map[string]interface {}
       err := json.Unmarshal([]byte(str), &variables)
 
+- go doc
+
+      godoc -http=:8090
