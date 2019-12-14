@@ -214,3 +214,7 @@
 - go doc
 
       godoc -http=:8090
+
+- go proxy
+
+      export GOPROXY=https://goproxy.io

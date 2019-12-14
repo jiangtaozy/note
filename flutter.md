@@ -16,7 +16,7 @@
 
 - Print
 
-      print();
+      print('name: ${name}');
 
 - Install package
 
@@ -25,3 +25,11 @@
 - List emulators
 
       flutter emulators
+
+- Typeof
+
+      print("HELLO".runtimeType);
+
+- ADB logcat
+
+      adb logcat | grep 'flutter'
