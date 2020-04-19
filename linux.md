@@ -278,3 +278,7 @@
 - Merging folders with mv
 
       rsync -av /source /destination
+
+- Arandr xrandr gui
+
+      arandr
