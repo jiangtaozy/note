@@ -1,3 +1,8 @@
+- 默认前导键
+      ctrl + b
+- 切换窗口
+      Ctrl+b ;：光标切换到上一个窗格。
+      Ctrl+b o：光标切换到下一个窗格。
 - tmux new -s session # 建立会话
 - tmux kill-session -t demo # 关闭demo会话
 - ctrl + a c # 新建窗口

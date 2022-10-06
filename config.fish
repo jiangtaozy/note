@@ -5,9 +5,6 @@ alias studio='~/src/android-studio/bin/studio.sh &'
 alias build='./gradlew assembleRelease'
 alias talk='/home/jemo/src/talk-linux-x64/talk'
 
-alias todb='mysql -h 192.168.31.3 -uchslab -pPassword wfx'
-alias to122='ssh wk@122.152.195.166'
-
 alias logcat-chrom='adb shell "logcat | grep 'chrom'"'
 alias logcat-rn='adb logcat | grep ReactNativeJS'
 alias logcat-web='adb shell "logcat | grep 'Web Console'"'

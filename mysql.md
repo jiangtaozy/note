@@ -16,6 +16,13 @@
       GRANT ALL PRIVILEGES ON mydb.* TO 'jemo'@'localhost';
       GRANT ALL PRIVILEGES ON mydb.* TO 'jemo'@'%';
 
+      CREATE USER 'user' IDENTIFIED BY 'pwd';
+      CREATE DATABASE IF NOT EXISTS db;
+      grant all privileges on db.* to user;
+
+      CREATE DATABASE IF NOT EXISTS mujx;
+      grant all privileges on mujx.* to mjx;
+
 - import an SQL file using the command line in MySQL.
 
       mysql -h 192.168.31.3 -u username -p database_name < file.sql
@@ -107,3 +114,81 @@
       FROM tables
       [WHERE conditions]
       ORDER BY expression [ ASC | DESC ];
+
+- Show databases
+
+      show databases;
+
+- Update
+
+      UPDATE table_name
+      SET column1=value, column2=value2,...
+      WHERE some_column=some_value
+
+- Show processlist
+
+      show processlist;
+
+- 创建索引
+
+      ALTER table tableName ADD INDEX indexName(columnName)
+
+- 创建多列索引
+
+      ALTER TABLE people ADD INDEX fname_lname_age (firstname,lastname,age);
+
+- show profiles查询SQL执行时间
+
+      show profiles用来查询SQL执行时间，它是mysql 5.0.37之后添加的功能。
+      1.查看数据库版本信息，登录数据库时显示的信息中会出现数据库版本信息：
+      2.查看show profiles功能是否开启：
+          show variables like "%pro%";
+      3.开启show profiles功能：
+          set profiling=1;
+      4.查看每条执行过的SQL语句的执行时间：
+          show profiles;
+      5.查看一条SQL语句的详细执行时间：
+          show profile for query 1;
+
+- 查看慢查询
+
+      show processlist;
+
+- MySQL分组查询并统计大于某值的sql语句
+
+      select count(id) as count, orderSn from pddAfterSalesOrder group by orderSn having count > 1;
+
+- 清屏
+
+      system clear
+
+- Change Column Type
+
+      ALTER TABLE table_name MODIFY column_name datatype;
+
+- add column 增加列
+
+      ALTER TABLE table
+      ADD [COLUMN] column_name_1 column_1_definition [FIRST|AFTER existing_column],
+      ADD [COLUMN] column_name_2 column_2_definition [FIRST|AFTER existing_column],
+
+- where in
+
+      SELECT book_name,dt_of_pub,no_page
+      FROM book_mast
+      WHERE no_page IN (300,400,500);
+
+
+- mysql 备份与恢复
+
+      #备份
+      mysqldump -uuser -ppwd db > db.dump
+
+      #上传
+      scp /home/db.dump root@ip:/root/mujx.dump
+
+      #恢复
+      mysql -uuser -ppwd db < db.dump
+
+      #登录查看
+      mysql -uuser -ppwd db

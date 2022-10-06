@@ -90,3 +90,9 @@
 - Clone a remote branch and switch to it
 
       git checkout -b develop origin/develop
+
+- git stash
+
+      git stash
+      git stash show
+      git stash pop

@@ -2,8 +2,8 @@
 
       $mkdir -p $GOPATH/src/golang.org/x/
       $cd $GOPATH/src/golang.org/x/
-      $git clone https://github.com/golang/net.git net 
-      $go install net 
+      $git clone https://github.com/golang/net.git net
+      $go install net
 
 - go get proxy
 
@@ -66,6 +66,7 @@
       func main() {
         s := person{name: "Sean", age: 50}
         fmt.Printf("s: %v\n", s) // s: {Sean 50}
+        fmt.Printf("s: %+v\n", s) // s: {Sean 50}
         fmt.Printf("s.getAge(): %d\n", s.getAge()) // s.getAge(): 50
         sp := &s
         fmt.Printf("sp: %v\n", sp) // sp: &{Sean 50}
@@ -77,7 +78,7 @@
         "fmt"
         "encoding/json"
       )
-      
+
       // only fields with a capital first letter are visible
       // to external programs like the JSON Marshaller.
       type person struct {
@@ -138,19 +139,19 @@
 - pointer
 
       package main
-      
+
       import "fmt"
-      
+
       func main() {
         i, j := 42, 2701
-      
+
         // The & operator generates a pointer to its operand.
         p := &i         // point to i
         // The * operator denotes the pointer's underlying value.
         fmt.Println(*p) // read i through the pointer
         *p = 21         // set i through the pointer
         fmt.Println(i)  // see the new value of i
-      
+
         p = &j         // point to j
         *p = *p / 37   // divide j through the pointer
         fmt.Println(j) // see the new value of j
@@ -172,7 +173,7 @@
 
 - Bug: multiple registrations for /debug/requests
 
-      // added rm -rf $GOPATH/src/go.etcd.io/etcd/vendor/golang.org/x/net/trace to our CI pipeline 
+      // added rm -rf $GOPATH/src/go.etcd.io/etcd/vendor/golang.org/x/net/trace to our CI pipeline
       rm -rf $GOPATH/src/go.etcd.io/etcd/vendor/golang.org/x/net/trace
 
 - Compare string and byte slice
@@ -218,3 +219,8 @@
 - go proxy
 
       export GOPROXY=https://goproxy.io
+
+- proxy.golang.org无法访问
+
+      go env -w GOPROXY=https://goproxy.cn
+
