@@ -36,6 +36,14 @@
 
       gJ
 
+- 合并两行
+
+      J
+
+- 隔行合并
+
+      :g/^/ join
+
 - Search current word
 
       *
@@ -194,3 +202,8 @@
 - 排序和去重
 
       :sort u
+
+- 替换大写
+
+      abc 替换为 ABC
+      %s/abc/\U&/g

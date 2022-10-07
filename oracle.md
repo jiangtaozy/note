@@ -597,3 +597,33 @@
       when matched then update set d.bonus = d.bonus + s.salary*.01
       when not matched then insert (d.employee_id, d.bonus)
       values (s.employee_id, s.salary*0.01);
+
+- alter table add column
+
+      alter table
+          table_name
+      add
+          (
+          column1_name column1_datatype column1_constraint,
+          column2_name column2_datatype column2_constraint,
+          column3_name column3_datatype column3_constraint
+          );
+
+- alter table modify column
+
+      ALTER TABLE workers
+      MODIFY email VARCHAR2( 30 ) NOT NULL;
+
+- insert data
+
+      INSERT INTO table_name
+      (column1, column2, …… , column_n)
+      VALUES
+      (expression1, expression2, expression3, expression_n);
+
+- limit query
+
+      select * from testtab where rownum <= 10;
+
+- to date
+      select to_date('2005-01-01 13:14:20','yyyy-MM-dd HH24:mm:ss') from dual;

@@ -30,3 +30,7 @@
 - Installing the VirtualBox Guest Additions
 
       Devices -> Installing Guest Additions
+
+- How to set up networking so both host and guest can access internet and talk to each other
+
+      The best way to do this is to use a Bridge Adapter in virtualbox. In virtual box go to the settings for your machine->Network->Adapter 1 and select Bridged Adapter. This will make you virtual machine part of your main network.

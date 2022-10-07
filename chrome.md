@@ -22,3 +22,8 @@
       3. 选项Preferences - Global - 勾选Auto-open DevToole for popups
       4. 设置保留上一次请求的log，选项卡Network - 勾选Preserve log
       5. 设置完成后，重点：在页面A需要打开“打开开发者工具（F12）”，然后点击按钮。则新打开的标签B也会自动打开“打开开发者工具（F12）”
+
+- 新窗口自动打开开发者工具
+
+      setting
+      Auto-open DevTools for popups

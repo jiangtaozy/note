@@ -595,3 +595,24 @@
 - 查看防火墙端口
 
       firewall-cmd --zone=public --list-ports
+
+- 调整屏幕亮度
+
+      xrandr
+      xrandr --output eDP --brightness 0.7
+      #查看亮度
+      xrandr --verbose
+      #自动调节
+      .bashrc
+
+- gbk 文件名乱码
+
+      convmv -f gbk -t utf-8 -r --notest /home/wwwroot
+
+- gbk 文件内容乱码
+
+      iconv -f gbk -t utf8 tmp.txt > tmp.txt.utf8 -c
+
+- 同步代码
+
+      scp -rp user@ip:/path /path

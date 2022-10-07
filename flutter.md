@@ -3,6 +3,9 @@
       flutter run
       r // hot reload
       p // display construction lines
+      c // clean the screen
+      q // quit
+      h // list all commands
 
 - Vim plug
 

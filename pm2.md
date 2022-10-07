@@ -29,3 +29,7 @@
 - Terminal Based Dashboard
 
       pm2 monit
+
+- start
+
+      pm2 start app.js --name <app_name>

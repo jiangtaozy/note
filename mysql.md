@@ -2,6 +2,16 @@
 
       mysql -u root -p
 
+- 远程登录
+
+      mysql -h 166.78.144.191 -u username -ppassword database_name
+
+      In this case:
+      -h specifies a host. Instead of using localhost, the IP 166.78.144.191 is used.
+      -u specifies a use name, in this case username
+      -p specifies a password, password. Note that for passwords, unlike the other parameters, there cannot be a space between the the option (-p) and the value (password). It is also not secure to use a password in this way, as other users on the system can see it as part of the command that has been run. If you include the -p option, but leave out the password, you will be prompted for it, which is more secure.
+      The database name is provided as the first argument after all the options, in this case database_name.
+
 - 添加用户命令
 
       CREATE USER 'jemo'@'localhost' IDENTIFIED BY '123456';
@@ -192,3 +202,52 @@
 
       #登录查看
       mysql -uuser -ppwd db
+
+- 开启外网访问
+
+      vim /etc/mysql/my.cnf
+      注释掉 bind-address = 127.0.0.1
+      重启mariadb systemctl restart mariadb.service
+
+- 查看字符集
+
+      查看当前系统默认的字符集设置
+      SHOW VARIABLES WHERE Variable_name LIKE 'character\_set\_%' OR Variable_name LIKE 'collation%';
+      查看database的字符编码
+      show create database polarsnow;
+      查看table的字符编码
+      show create table ps;
+      查看column的字符编码
+      show full columns from ps;
+
+- 颜文字bug，改为utf8mb4
+
+      CREATE DATABASE mydb CHARACTER SET utf8mb4;
+      vi /etc/mysql/mariadb.cnf
+
+          [client]
+          # Default is Latin1, if you need UTF-8 set this (also in server section)
+          default-character-set = utf8mb4
+
+          [mysqld]
+          # * Character sets
+          # Default is Latin1, if you need UTF-8 set all this (also in client section)
+          character-set-server  = utf8mb4
+          collation-server      =  utf8mb4_unicode_ci
+          character_set_server   =  utf8mb4
+          collation_server       = utf8mb4_unicode_ci
+
+      systemctl restart mariadb.service
+
+      node knex connections: {
+          host: 'r',
+          user: 'XX',
+          password: 'XXX',
+          database: 'XX',
+          charset: 'utf8mb4', // 指定编码
+      }
+
+- 添加列
+
+      ALTER TABLE vendors
+      ADD COLUMN vendor_group INT NOT NULL;
